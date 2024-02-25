@@ -13,6 +13,6 @@ def login_route():
     user = login_query(email, password)
 
     if user and hash_password(password) == user['password']:
-        return send_success_response(user, "Login successfull")
+        return send_success_response(user, "Login successfulll")
     else:
         return send_error_response(401, {'error': 'Invalid credentials'}, 401)
